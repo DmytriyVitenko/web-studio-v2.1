@@ -149,9 +149,21 @@ img {
 /* HERO */
 
 .hero {
+  min-height: 600px;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
   background-color: var(--secondary-background-color);
   text-align: center;
-  height: 400px;
+  background-image: linear-gradient(
+      to left,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(/images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-title {
   font-weight: 900;
@@ -191,6 +203,18 @@ img {
 
 .features-list-item {
   width: calc((100% - 90px) / 4);
+}
+
+.features-list .thumb {
+  width: auto;
+  min-height: 120px;
+  background-color: var(--team-background-color);
+  border-radius: 4px;
+}
+
+.features-list .icon {
+  width: 70px;
+  height: 70px;
 }
 
 .features-list-title {
